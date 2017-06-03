@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "semicolon": [
+      "always"
+    ],
+    "eofline": true,
+    "no-unused-variable": true
+  }
+}

@@ -1,0 +1,16 @@
+.partner-system {
+    display: flex;
+
+    > *:first-child {
+        margin-right: 0.7rem;
+    }
+}
+
+.error {
+    color: #FF554C;
+    text-align: center;
+}
+
+[name=rememberMe] {
+    margin: 1rem;
+}

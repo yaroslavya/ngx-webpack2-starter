@@ -1,0 +1,186 @@
+@import "vars";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  font-size: 14px;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+select,
+textarea {
+  padding: .5rem;
+  border: 1px solid $default-border-color;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+
+  &:focus {
+    border-color: $hover-border-color;
+    box-shadow: 0 0 1px 1px $hover-box-shadow-color;
+  }
+
+  &[type=range] {
+    box-shadow: none;
+  }
+}
+
+input:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+select {
+  padding: .3rem;
+}
+
+textarea {
+  resize: none;
+  min-height: 7rem;
+}
+
+fieldset {
+  border: 1px solid $default-border-color;
+  margin-bottom: 1rem;
+
+  legend {
+    font-family: Roboto Condensed, Roboto, sans-serif;
+    color: #666;
+    font-size: 1.3rem;
+  }
+}
+
+div.temp-editor-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.apx-clickable {
+  border: 1px solid $default-border-color;
+
+  &:hover {
+    cursor: pointer;
+    border-color: $hover-border-color;
+    box-shadow: 0 0 1px 1px $hover-box-shadow-color;
+  }
+}
+
+.apx-button {
+  @extend .apx-clickable;
+  padding: .7rem;
+  margin: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #666;
+  min-width: 7rem;
+}
+
+ul.apx-v-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    margin: .7rem 0;
+  }
+}
+
+ul.apx-v-list-3 {
+  @extend .apx-v-list;
+
+  > li {
+    margin: .3rem 0;
+  }
+}
+
+ul.apx-v-list-10 {
+  @extend .apx-v-list;
+
+  > li {
+    margin: 1rem 0;
+  }
+}
+
+ul.apx-v-list-20 {
+  @extend .apx-v-list;
+
+  > li {
+    margin: 2rem 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scale-in {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+@keyframes scale-out {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+// Dragula 
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  background: #fff;
+  cursor: move;
+  list-style-type: none;
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: .4;
+  background: #fff;
+}

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "core": ["src/core"],      
+      "util": ["src/util"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vscode",
+    "cfg",
+    "bin",
+    "obj",
+    "Properties",
+    "public",
+    "html-report",
+    "reports",
+    "dll",
+    "src/app"
+  ]
+}

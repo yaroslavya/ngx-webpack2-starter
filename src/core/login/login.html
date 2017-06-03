@@ -1,0 +1,26 @@
+<div>
+    <span >Login</span>
+    <form #form="ngForm" content>
+        <div>
+            <div>Username</div>
+            <input [(ngModel)]="username" (keyup.enter)="login()" #usernameBox="ngModel" name="username" required />
+        </div>
+        <div>
+            <div>Password</div>
+            <input [(ngModel)]="password" (keyup.enter)="login()" type="password" #passwordBox="ngModel" name="password" autocomplete="new-password"
+                required />
+        </div>
+        <div class="partner-system">
+            <div>
+                <div >Partner</div>
+                <input (keyup.enter)="login()" [(ngModel)]="partnerId" #partnerBox="ngModel" name="partnerId" required
+                />
+            </div>
+            <div>
+                <div>System</div>
+                <input (keyup.enter)="login()" [(ngModel)]="systemId" #systemIdBox="ngModel" name="systemId" required
+                />
+            </div>
+        </div>
+    </form>
+</div>
