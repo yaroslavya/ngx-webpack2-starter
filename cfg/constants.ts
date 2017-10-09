@@ -21,7 +21,7 @@ export const dllEntries = {
 
 export const MAIN_ENTRY = "src/main.ts";
 
-export const PORT = 1001;
+export const PORT = 8081;
 export const HOST = "localhost";
 export const PUBLIC_PATH = `http://${HOST}:${PORT}/`;
 
