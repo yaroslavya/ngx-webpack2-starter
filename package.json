@@ -1,6 +1,6 @@
 {
   "name": "angular-webpack2-fast-build-starter",
-  "version": "17.0.0-pre",
+  "version": "0.0.1-beta0",
   "description": "angular2+ webpack 2 boilerplate project that aims for the fast build and rebuild",
   "keywords": [
     "angular",
@@ -8,6 +8,7 @@
     "angular4",
     "webpack2",
     "karma",
+    "chrome-headless",
     "performance",
     "typescript"
   ],
