@@ -1,2 +1,2 @@
 # ngx-webpack2-starter
-angular 2+, webpack2 starter with a fast build and rebuild
+angular 5+, webpack3+ starter with a fast build and rebuild
