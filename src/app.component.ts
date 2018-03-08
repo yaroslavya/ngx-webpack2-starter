@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
 
-import { EnvironmentDataService } from "./error-handler";
-
 @Component({
     selector: "[app]",
     styles: [require("./app.scss")],
@@ -17,20 +15,5 @@ import { EnvironmentDataService } from "./error-handler";
     `
 })
 export class AppComponent {
-
-    constructor(
-        private _envDataService: EnvironmentDataService
-    ) {
-        _envDataService.init();
-
-        window.addEventListener("dragover", function (e: any) {
-            e = e || event;
-            e.preventDefault();
-        }, false);
-
-        window.addEventListener("drop", function (e: any) {
-            e = e || event;
-            e.preventDefault();
-        }, false);
-    }
+    constructor() {}
 }

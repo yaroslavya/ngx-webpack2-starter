@@ -15,4 +15,5 @@ reports
 typings
 packages
 npm-debug.log
+package-lock.json
 debug.log
