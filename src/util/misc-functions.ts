@@ -169,6 +169,7 @@ export function isModule(type: Function): boolean {
         && "declarations" in metadata[0];
 }
 
+//TODO: remove if we dont use it
 export function splitIntoModuleFriendly(types: Function[]): {
     directives: IClass[];
     providers: IClass[];

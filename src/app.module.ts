@@ -3,8 +3,6 @@ import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 
-import { splitIntoModuleFriendly } from "./util";
-
 /** Routes */
 import { routing } from "./routes";
 
@@ -13,10 +11,6 @@ import * as CORE from "./core";
 import { AppComponent } from "./app.component";
 import { CustomErrorHandler, ErrorHandlerModule } from "./error-handler";
 
-const ALL = splitIntoModuleFriendly([
-    ...Object.values(CORE)
-]);
-
 @NgModule({
     imports: [
         routing,
@@ -24,7 +18,7 @@ const ALL = splitIntoModuleFriendly([
         CommonModule,
         RouterModule,
         ErrorHandlerModule.forRoot(),
-        ...ALL.modules
+        CORE.CoreModule
     ],
     declarations: [
         AppComponent
